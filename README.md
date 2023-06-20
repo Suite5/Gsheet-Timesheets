@@ -10,7 +10,8 @@
 
 From the Code Editor:
 - Go to upper right -> Click 'Deploy' option
-- Select type -> choose Library
+- Select 'New Deployment'
+- On the 'Select type' option -> choose Library
 - Set Description to 'MainGSheet' -> click 'Deploy'
 - On the main menu on the left -> click 'Project Settings' -> copy the Scipt ID that appears (this will be needed later)
 
@@ -18,7 +19,7 @@ From the Code Editor:
 
 1. Go to Extensions -> App Script
 2. Remove everything from the Code Editor, and copy paste the given code ( **new_file.js** )
-3. Follow these steps below
+3. Follow these steps below (for version, choose '1')
 ![image](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/f3d621db-3794-4a3d-a818-45c00483a104)
 
 4. Then, to apply changes immediately (locking/unlocking the relevant columns), from the menu above, select the `manageSpreadsheetProtection` function, and click Run (see below screenshot)
