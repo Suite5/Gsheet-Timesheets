@@ -4,11 +4,11 @@
 - Go to Extensions -> App Script
 - copy paste the given code ( **main library** )
 - If you want to add onwers other than the file owner:
-    - in Code Editor -> find `let owners = [];` and add their emails inside single quotes, comma separated(if there are going to be more than 1)
+    - in Code Editor -> find `let owners = [];` and add their emails inside single quotes, comma separated (if there are going to be more than 1)
 
 **To Deploy as Library**
 - Go to upper right -> Click 'Deploy' option
-- Select type -> choose Librarygit 
+- Select type -> choose Library
 - set Description to 'MainGSheet' -> click 'Deploy'
 - on the main menu on the left -> click 'Project Settings' -> copy the Scipt ID that appears (this will be needed later)
 
