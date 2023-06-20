@@ -2,7 +2,7 @@
 
 - Open the Google Sheet file
 - Go to Extensions -> App Script
-- copy paste the given code ( **main_library.js** )
+- Remove everything from the Code Editor, and copy paste the given code ( **main_library.js** )
 - If you want to add more onwers other than the file owner:
     - in Code Editor -> find `let owners = [];` and inside the brackets, add their emails inside single quotes, comma separated (if there are going to be more than 1)
 
@@ -17,7 +17,7 @@ From the Code Editor:
 ### To use the library on a new file (e.g copy of the original one) (COPY FILE 1)
 
 1. Go to Extensions -> App Script
-2. Copy paste the given code ( **new_file.js** )
+2. Remove everything from the Code Editor, and copy paste the given code ( **new_file.js** )
 3. Follow these steps below
 ![image](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/f3d621db-3794-4a3d-a818-45c00483a104)
 
