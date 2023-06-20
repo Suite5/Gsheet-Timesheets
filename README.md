@@ -1,11 +1,14 @@
 ### Creation of main GSheet that will be the library with the main code for other copies (MAIN FILE)
 
+- Open the Google Sheet file
 - Go to Extensions -> App Script
-- copy paste the given code for the **main library**
+- copy paste the given code ( **main library** )
+- If you want to add onwers other than the file owner:
+    - in Code Editor -> find `let owners = [];` and add their emails inside single quotes, comma separated(if there are going to be more than 1)
 
 **To Deploy as Library**
 - Go to upper right -> Click 'Deploy' option
-- Select type -> choose Library
+- Select type -> choose Librarygit 
 - set Description to 'MainGSheet' -> click 'Deploy'
 - on the main menu on the left -> click 'Project Settings' -> copy the Scipt ID that appears (this will be needed later)
 
@@ -13,7 +16,7 @@
 
 **To use the Library on a copied file**
 1. Go to Extensions -> App Script
-2. Copy paste the given code for a **copied file**
+2. Copy paste the given code ( **copied file** )
 4. Follow these steps below
 ![image](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/f3d621db-3794-4a3d-a818-45c00483a104)
 
