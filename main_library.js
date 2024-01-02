@@ -70,7 +70,7 @@ function getTodayDateColumn_(sheet) {
   const todayDate = Utilities.formatDate(
     new Date(),
     Session.getScriptTimeZone(),
-    "E MMM d y"
+    "E MMM dd y"
   );
 
   let dataRange = sheet.getDataRange();
