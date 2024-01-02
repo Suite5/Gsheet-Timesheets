@@ -20,7 +20,7 @@ From the Code Editor:
 1. Go to Extensions -> App Script
 2. Remove everything from the Code Editor, and copy paste the given code ( **new_file.js** )
 3. Follow these steps below 
-   **ΝΟΤΕ** : (for version, choose '1' , for 'Identifier' insert 'MainGSheet')
+   (**ΝΟΤΕ** : for version, choose '1' , for 'Identifier' insert 'MainGSheet')
 ![image](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/f3d621db-3794-4a3d-a818-45c00483a104)
 
 4. Then, to apply changes immediately (locking/unlocking the relevant columns), from the menu above, select the `manageSpreadsheetProtection` function, and click Run (see below screenshot)
