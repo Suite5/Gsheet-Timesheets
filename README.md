@@ -24,7 +24,7 @@ From the Code Editor:
 ![image](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/f3d621db-3794-4a3d-a818-45c00483a104)
 
 4. Then, to apply changes immediately (locking/unlocking the relevant columns), from the menu above, select the `manageSpreadsheetProtection` function, and click Run (see below screenshot)
-NOTE : You can proceed to the next step in case you don't want to apply the changes immediately
+**NOTE** : You can skip this step and proceed to the next step in case you don't want to apply the changes immediately
 
 ![Screenshot 2023-06-20 at 2 46 59 PM](https://github.com/Suite5/Gsheet---Timesheets/assets/59557373/df82832c-4cae-43df-857d-d714abcefe86)
 
