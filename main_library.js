@@ -24,11 +24,7 @@ function manageSpreadsheetProtection() {
   let sheets = SpreadsheetApp.getActiveSpreadsheet().getSheets();
   let sheet, protection;
 
-  const todayDateSheetNameFormat = Utilities.formatDate(
-    new Date(),
-    Session.getScriptTimeZone(),
-    "y.MM"
-  );
+  const todayDateSheetNameFormat = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "y.MM");
 
   //loop through all sheets
   for (let i = 0; i < sheets.length; i++) {
@@ -62,16 +58,34 @@ function manageSpreadsheetProtection() {
       protection.setUnprotectedRanges(unprotected);
     }
 
+    //also, apply unprotect ranges for sheet 'Max Workable Days'
+    if (sheet.getName() === "Max Workable Days") {
+      let workableDaysSheetValues = sheet.getDataRange().getValues();
+      let unprotectedLeaveDays = [];
+
+      for (let row = 0; row < workableDaysSheetValues.length; row++) {
+        if (workableDaysSheetValues[row][0].toString() !== "Leave") {
+          continue;
+        }
+
+        // unprotect only cells in 'Leave' row
+        for (let col = 0; col < workableDaysSheetValues[row].length; col++) {
+          //add this check to unprotect only cells related to a 'Month' column
+          if (col >= 1 && col <= 12) {
+            unprotectedLeaveDays.push(sheet.getRange(row + 1, col + 1));
+          }
+        }
+      }
+
+      protection.setUnprotectedRanges(unprotectedLeaveDays);
+    }
+
     manageUsersProtection_(protection);
   }
 }
 
 function getTodayDateColumn_(sheet) {
-  const todayDate = Utilities.formatDate(
-    new Date(),
-    Session.getScriptTimeZone(),
-    "E MMM dd y"
-  );
+  const todayDate = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "E MMM dd y");
 
   let dataRange = sheet.getDataRange();
   let values = dataRange.getValues();
